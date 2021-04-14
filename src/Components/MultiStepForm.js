@@ -33,6 +33,10 @@ const [activeStep, setActiveStep] = useState(0)
 const handleNext = () =>{
     setActiveStep(prevActiveStep =>prevActiveStep + 1 )
 }
+
+const handlePrev = () =>{
+    setActiveStep(prevActiveStep =>prevActiveStep - 1 )
+}
      
 
    function  getStepsContents (stepIndex) {
@@ -42,12 +46,15 @@ const handleNext = () =>{
                         handleNext={handleNext}
                         activeStep={activeStep}
                         steps={steps} 
+                        
                         />;
             case 1:
                 return <StepTwo 
                         handleNext={handleNext}
                         activeStep={activeStep}
-                        steps={steps} />
+                        steps={steps}
+                        handlePrev={handlePrev}
+                        />
             case 2:
                 return 'Step Three (CHECKOUT)'
                
