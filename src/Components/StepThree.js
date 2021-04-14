@@ -16,22 +16,33 @@ const styles = {
     textTransform: "none",
     marginTop:'2em',
    
-  }
+  },
+  heading: {
+    
+    margin: "0",
+    textAlign: "center",
+    marginBottom: "2em",
+  },
 };
 
 function StepThree({ handlePrev }) {
   return (
     <div>
+         <Grid justify="center" alignContent="center">
+        <Typography style={styles.heading}>
+          <h2>Almost done! Checkout now</h2> 
+        </Typography>
+      </Grid>
       <Grid justify="center" spacing={3}>
         <Grid
-          alignContent="center"
+          
           item
           component={Card}
           alignContent="center"
           xs={12}
           md={8}
         >
-          <Typography>Checkout</Typography>
+          <Typography style={{textAlign: "center", marginBottom:'1em'}} variant='h4'>Checkout</Typography>
           <Button style={styles.proccedBtn} endIcon={<SendIcon />}>
             Procced
           </Button>

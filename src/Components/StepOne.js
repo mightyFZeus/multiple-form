@@ -36,8 +36,9 @@ const styles = {
     padding: "2rem",
   },
   inputField: {
-    width: "100%",
+    width: "80%",
     marginBottom: "1rem",
+    marginLeft:'3rem'
   },
   btn: {
     width: "100%",
@@ -47,14 +48,16 @@ const styles = {
   },
   disabledBtn: {
     background: "rgba(0,0,0, 0.38)",
-    width: "100%",
+    width: "80%",
     height: "3rem",
+    marginLeft:'3rem'
   },
   enabledBtn: {
     background: "red",
-    width: "100%",
+    width: "80%",
     height: "3rem",
-    color:'white'
+    color:'white',
+    marginLeft:'3rem'
   },
 };
 
@@ -175,7 +178,7 @@ function StepOne({ activeStep, steps, handleNext }) {
             </Typography>
           )}
 
-          <IntlTelInput preferredCountries={["ru"]} />
+          {/* <IntlTelInput preferredCountries={["ru"]} /> */}
           <TextField
             style={styles.inputField}
             label="Email"

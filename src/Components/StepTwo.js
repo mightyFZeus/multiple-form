@@ -91,7 +91,7 @@ function StepTwo({ handleNext, handlePrev}) {
           <Typography variant="h5" style={styles.planTitle}>
             Starter Plan
           </Typography>
-          <Divider />
+          
             <Typography style={styles.price}>
              $3.99/month
             </Typography>
@@ -110,7 +110,7 @@ function StepTwo({ handleNext, handlePrev}) {
 
         <Grid
           style={styles.cardPlans}
-          style={styles.gridStyles}
+          
           item
           component={Card}
           xs={12}
@@ -119,7 +119,7 @@ function StepTwo({ handleNext, handlePrev}) {
           <Typography variant="h5" style={styles.planTitle}>
             Regular Plan
           </Typography>
-          <Divider />
+          
             <Typography style={styles.price}>
              $5.99/month
             </Typography>
@@ -136,7 +136,7 @@ function StepTwo({ handleNext, handlePrev}) {
 
         <Grid
           style={styles.cardPlans}
-          style={styles.gridStyles}
+          
           item
           component={Card}
           xs={12}
@@ -145,7 +145,7 @@ function StepTwo({ handleNext, handlePrev}) {
           <Typography variant="h5" style={styles.planTitle}>
             Advanced Plan
           </Typography>
-          <Divider />
+        
             <Typography style={styles.price}>
              $10.99/month
             </Typography>
