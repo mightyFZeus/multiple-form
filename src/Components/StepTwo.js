@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 
 const starterPlan = [
-  "Contactless Delivery",
+  "Fast Delivery",
   "Mobile App",
   "Tracking Services",
   "Checking",
@@ -59,8 +59,13 @@ const styles = {
     textTransform: "none",
     marginTop:'2em',
    
-   
   },
+  price:{
+      
+      marginLeft: "25%",
+      letterSpacing:'2px',
+      fontWeight:'600'
+  }
 };
 
 function StepTwo({ handleNext, handlePrev}) {
@@ -82,9 +87,17 @@ function StepTwo({ handleNext, handlePrev}) {
           xs={12}
           md={3}
         >
+            
           <Typography variant="h5" style={styles.planTitle}>
             Starter Plan
           </Typography>
+          <Divider />
+            <Typography style={styles.price}>
+             $3.99/month
+            </Typography>
+          <Divider />
+
+          
           {starterPlan.map((plan) => (
             <CardContent style={styles.contentCard} key={plan}>
               *{plan}
@@ -106,6 +119,11 @@ function StepTwo({ handleNext, handlePrev}) {
           <Typography variant="h5" style={styles.planTitle}>
             Regular Plan
           </Typography>
+          <Divider />
+            <Typography style={styles.price}>
+             $5.99/month
+            </Typography>
+          <Divider />
           {regularPlan.map((plan) => (
             <CardContent style={styles.contentCard} key={plan}>
               *{plan}
@@ -127,6 +145,11 @@ function StepTwo({ handleNext, handlePrev}) {
           <Typography variant="h5" style={styles.planTitle}>
             Advanced Plan
           </Typography>
+          <Divider />
+            <Typography style={styles.price}>
+             $10.99/month
+            </Typography>
+          <Divider />
           {advancePlan.map((plan) => (
             <CardContent style={styles.contentCard} key={plan}>
               *{plan}
