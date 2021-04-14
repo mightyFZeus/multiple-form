@@ -3,6 +3,7 @@ import {Stepper, Step, StepLabel, Typography, Button} from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles'
 import StepOne from './StepOne'
 import StepTwo from './StepTwo'
+import StepThree from './StepThree'
 
 
 
@@ -56,7 +57,9 @@ const handlePrev = () =>{
                         handlePrev={handlePrev}
                         />
             case 2:
-                return 'Step Three (CHECKOUT)'
+                return <StepThree 
+                            handlePrev={handlePrev}
+                            />
                
         
             default: return 'Unknow step'

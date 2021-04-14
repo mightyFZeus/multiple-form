@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  Box,
+
   Button,
   Divider,
   Typography,
@@ -42,7 +42,7 @@ const styles = {
     marginLeft: "15%",
   },
   heading: {
-    color: "red",
+    
     margin: "0",
     textAlign: "center",
     marginBottom: "2em",

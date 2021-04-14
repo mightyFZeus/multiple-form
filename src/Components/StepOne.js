@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import useForm from "./useForm";
 
-import { makeStyles } from "@material-ui/core/styles";
+
 import {
   Typography,
-  Grid,
+ 
   Button,
-  Checkbox,
+ 
   TextField,
   OutlinedInput,
   FormControl,
@@ -21,14 +21,6 @@ import BlockIcon from "@material-ui/icons/Block";
 import Visibility from "./visibility.png";
 import Invisibility from "./invisible.png";
 
-// const useStyles = makeStyles=({
-//     mainContainer:{
-//         display:'grid',
-//         justifyContent:'center',
-//         position:'relative',
-//         zIndex:'5'
-//     }
-// })
 
 const styles = {
   mainContainer: {
@@ -62,6 +54,7 @@ const styles = {
     background: "red",
     width: "100%",
     height: "3rem",
+    color:'white'
   },
 };
 
