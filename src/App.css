@@ -8,3 +8,9 @@
   border-radius: 5px;
   border: 1px solid rgb(182,181,181);
 }
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');

@@ -33,7 +33,7 @@ const styles = {
   btn: {
     background: "red",
     width: "50%",
-    height: "3rem",
+    height: "2rem",
     marginLeft: "15%",
     color: "white",
     textTransform: "none",
@@ -51,6 +51,15 @@ const styles = {
     color: "red",
     marginLeft: "15%",
     fontWeight: "bold",
+  },
+  backBtn: {
+    background: "red",
+    height: "2rem",
+    color: "white",
+    textTransform: "none",
+    marginTop:'2em',
+   
+   
   },
 };
 
@@ -78,7 +87,7 @@ function StepTwo({ handleNext, handlePrev}) {
           </Typography>
           {starterPlan.map((plan) => (
             <CardContent style={styles.contentCard} key={plan}>
-              {plan}
+              *{plan}
             </CardContent>
           ))}
           <Button style={styles.btn} onClick={handleNext}>
@@ -99,7 +108,7 @@ function StepTwo({ handleNext, handlePrev}) {
           </Typography>
           {regularPlan.map((plan) => (
             <CardContent style={styles.contentCard} key={plan}>
-              {plan}
+              *{plan}
             </CardContent>
           ))}
           <Button onClick={handleNext} style={styles.btn}>
@@ -120,24 +129,24 @@ function StepTwo({ handleNext, handlePrev}) {
           </Typography>
           {advancePlan.map((plan) => (
             <CardContent style={styles.contentCard} key={plan}>
-              {plan}
+              *{plan}
             </CardContent>
           ))}
           <Button onClick={handleNext} style={styles.btn}>
             Choose Plan
           </Button>
         </Grid>
-        <Button
-        onClick={handlePrev}
-        >
+        
+      </Grid>
+      <Grid >
+          <Button
+            style={styles.backBtn}
+            onClick={handlePrev}
+            >
             Back
         </Button>
       </Grid>
-      <Button
-        onClick={handlePrev}
-        >
-            Back
-        </Button>
+      
     </>
   );
 }

@@ -11,7 +11,7 @@ import StepTwo from './StepTwo'
 const useStyles =makeStyles({
     root:{
       //  border:'1px solid #999',
-        width:'auto',
+        width:'80%',
         height:'auto',
         margin:'6rem auto',
         
